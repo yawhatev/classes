@@ -43,12 +43,14 @@
 
 // Callbacks
 
-const sum = (x,y,callback)=>{
-    callback(x+y)
-}
-sum(5,10,(s)=>{//s call back ma gayera basxa, ani compute bhaisakesi return hunxa value
-    console.log("The sum of the numbers is: ", s)
-});
+// const sum = (x,y,callback)=>{
+//     callback(x+y)
+// }
+// sum(5,10,(s)=>{//s call back ma gayera basxa, ani compute bhaisakesi return hunxa value
+//     console.log("The sum of the numbers is: ", s)
+// });
+
+
 
 // const fetchData = (callback) => {
 //     let data = "Data from the server"
