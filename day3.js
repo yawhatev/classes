@@ -1,3 +1,5 @@
+task
+
 //a program that prints all even numbers from 1 to 50 
 for(let i=1; i<=50; i++){
     if(i%2 === 0){ // '==' is used for comparison, '===' is used for comparison and type checking
@@ -58,7 +60,7 @@ class Person {
 const person1 = new Person('Alice', 25);
 person1.introduce(); // Output: Hello, my name is Alice and I am 25 years old
 
-//Declaring Variables with var, let, and const and reassigning them; note the errors
+Declaring Variables with var, let, and const and reassigning them; note the errors
 var x = 5;
 let y = 10;
 const z = 15;
@@ -69,7 +71,7 @@ z = 150; // TypeError: Assignment to constant variable.
 
 console.log(x); // Output: 50
 console.log(y); // Output: 100
-console.log(z); // Output: 150
+console.log(z); // Output: 15
 
 //function findMax to Find the Maximum Number in an Array
 function findMax(arr) {
@@ -91,7 +93,8 @@ const car = {
         console.log(`This car is a ${this.brand} ${this.model}`);//this refers to the object that the method is called on
     }
 };
-console.log(car.getDetails); 
+console.log(car.getDetails); //yesle output didaina getDetails() function ko reference matra dincha
+car.getDetails(); // Output: This car is a Toyota Corolla
 
 //Convert a traditional function that calculates the square of a number into an arrow function.
 function getsquare(num) {
@@ -132,13 +135,13 @@ const book1 = new Book('The Alchemist', 'Paulo Coelho', 1988);
 book1.displayInfo(); // Output: The book The Alchemist was written by Paulo Coelho in 
 
 //Use map to create a new array where each number in an array is doubled.
-const numbers = [1, 2, 3, 4, 5];
-const doubledNumbers = numbers.map(function(num) {//map() method creates a new array with the results of calling a provided function on every element in the calling array.
+const numArray= [1, 2, 3, 4, 5];
+const doubledNumbers = numArray.map(function(num){//map() method creates a new array with the results of calling a provided function on every element in the calling array.
     return num * 2;
 });
 console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
 
-/* traditional function:Defined with the function keyword. Can be named or anonymous. Can use the this keyword dynamically (depending on how it is called). 
+/*traditional function:Defined with the function keyword. Can be named or anonymous. Can use the this keyword dynamically (depending on how it is called). 
 Arrow function: Does not use the function keyword.
 Automatically binds the this value to the surrounding context (lexical scoping).
 When there is a single expression, you can omit the {} and return statement (implicit return)*/
